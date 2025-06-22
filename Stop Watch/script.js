@@ -42,7 +42,8 @@ stopbtn.addEventListener("click", () => {
 resetbtn.addEventListener("click", () => {
     clearInterval(timerID);
     msec = sec = min = 0;
-    updateDisplay();
+    //timer.innerHTML = '00: 00: 00' can use this to reset the display directly
+    updateDisplay(); // reset display by using update() funciton
 });
 
 // Initialize display
